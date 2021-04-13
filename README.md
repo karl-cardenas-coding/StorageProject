@@ -29,7 +29,9 @@ Below are ways to exit/save from the vim scripting window in your CLI.
 
 The chmod command will make this script executable. The (u+x) in the below command stands for user+executable.
 
+```
 $ chmod u+x hardwaretest/example.sh
+```
   
 ## Finding Out Total Available Storage
 
