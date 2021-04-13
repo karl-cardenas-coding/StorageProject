@@ -7,11 +7,15 @@ This is a qucik BASH scripting project that determines how much storage you have
 For starters, I am on a Mac using iMac Sierra Version 10.12.6 so some of the commands may differ from machine to machine. Open your CLI and type in the df (disk free) command which will show you the amount of space available on the machine you are using. I would recommend using -H at the end of the command which stands for “human-readable” and this will provie you a general idea of how much space is available on your machine. In this scenario, I will be actually using -k because I want to see the data in kilobytes which will eventually be converted into gigabytes.
 
 ```
+df -H
+
+or
+
 df -k
 ```
 ## Building the script in BASH
 
-First you may create a directory. I will name my new directory hardwaretest and create a file named example.sh. Vim is a text editor that is used in the CLI. 
+First you may create a directory. I will name my new directory hardwaretest and create a file named example.sh. Vim is a text editor that is used in the CLI and where you will actually start writing your script. 
 
 ```
 $ mkdir hardwaretest
@@ -25,17 +29,10 @@ Below are ways to exit/save from the vim scripting window in your CLI.
 :q - quit vim
 :wq - write and quit
 ```
-## Making The Script Executable. 
 
-The chmod command will make this script executable. The (u+x) in the below command stands for user+executable.
-
-```
-$ chmod u+x hardwaretest/example.sh
-```
-  
 ## Finding Out Total Available Storage
 
-This part of the script determines how much used and available space is on the machine. There are two variabes being created here (USEDKB & FREEKB). They both take the output of the _df_ command in kilobytes and pipes the output to 
+This part of the script determines how much used and available space is on the machine. There are two variabes being created here (USEDKB & FREEKB). They both take the output of the _df_ command in kilobytes and will add up the total used stoarage and the total free storage.   
 
 ```
 #!/bin/bash
@@ -67,8 +64,14 @@ then
 fi
 }
 ```
+## Making The Script Executable. 
 
-## Running the scirpt
+The chmod command will make this script executable. The (u+x) in the below command stands for user+executable.
+
+```
+$ chmod u+x hardwaretest/example.sh
+```
+  ## Running the scirpt
 
 In your CLI just type in the name of the path and your script will run
 
