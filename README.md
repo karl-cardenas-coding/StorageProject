@@ -1,6 +1,6 @@
 ## BASH Script Storage Project
 
-This is a qucik BASH scripting project that determines how much storage you have on your machine. This is one of the first projects I have worked on while on my jounrey to learn Linux and BASH Scripting.  
+This is a qucik BASH scripting project that determines how much storage you have on your machine. 
 
 ## Figuring our disk space on the CLI (Command Line Interface)
 
