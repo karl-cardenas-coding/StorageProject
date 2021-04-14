@@ -13,7 +13,7 @@ Open your CLI and type in the df (disk free) command, `df` which will show you t
 ```
 df -H
 ```
-or
+OR
 ```
 df -k
 ```
